@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row row-content">
+        <div class="col-12">
+           <h3>Please Add a new Teacher</h3>
+        </div>
+         <div class="col-12 col-md-9">
+             <form>
+                 <div class="form-group row">
+                     <label for="tname" class="col-md-2 col-form-label">Teacher's Name:</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="tname" name="tname" placeholder="Teacher Name" [(ngModel)]="tname">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="designation" class="col-md-2 col-form-label">Designation:</label>
+                     <div class="col-md-10">
+                         <input type="text" class="form-control" id="designation" name="designation" placeholder="Designation" [(ngModel)]="tdesignation">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <div class="offset-md-2 col-md-10">
+                         <button type="submit" class="btn btn-primary" (click)="addteacher()">Add Teacher</button>
+                     </div>
+                 </div>
+             </form>
+    
+         </div>
+          <div class="col-12 col-md">
+         </div>
+    </div>
+    </div>
+    
+    

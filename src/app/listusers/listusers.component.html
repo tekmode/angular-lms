@@ -1,0 +1,31 @@
+<div class="row row-content">
+    <div class="col-12 col-sm-9">
+        <h2>List of Registered Users</h2>
+    </div>
+     <div class="col-12 col-sm-3">
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Username</th>
+                    <th>Admin?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{user._id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.role}}</td>
+                    <td>{{user.username}}</td>
+                    <td>{{user.admin}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

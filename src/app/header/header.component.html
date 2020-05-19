@@ -1,0 +1,66 @@
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="navbar-brand" routerLink="dashboard"><img src="../../assets/img/logo.jpg" alt="LMS" height="40" width="41"></a> 
+                    <div ngbDropdown class="d-inline-block">
+                    <button class="btn" id="classes" ngbDropdownToggle>Class Management</button>
+                    <div ngbDropdownMenu aria-labelledby="classes">
+                        <button ngbDropdownItem>View Class</button>
+                        <button ngbDropdownItem><a routerLink="viewclasses">View Classes</a></button>
+                        <button ngbDropdownItem><a routerLink="addclass">Add Class</a></button>
+                        <button ngbDropdownItem>Remove Class</button>
+                        <button ngbDropdownItem>Add Students</button>
+                        <button ngbDropdownItem>Assign Teacher</button>
+                    </div>
+                </div>
+                <div ngbDropdown class="d-inline-block">
+                    <button class="btn" id="teacher" ngbDropdownToggle>Teacher Management</button>
+                    <div ngbDropdownMenu aria-labelledby="teacher">
+                    <button ngbDropdownItem><a routerLink="addteacher">Add Teacher</a></button>
+                    <button ngbDropdownItem><a routerLink="viewteachers">View Teachers</a></button>
+                    <button ngbDropdownItem>View Teacher</button>
+                    <button ngbDropdownItem>Remove Teacher</button>
+                    </div>
+                </div>
+                <div ngbDropdown class="d-inline-block">
+                    <button class="btn" id="student" ngbDropdownToggle>Student Management</button>
+                    <div ngbDropdownMenu aria-labelledby="student">
+                        <button ngbDropdownItem><a routerLink="addstudent">Add Student</a></button>
+                        <button ngbDropdownItem><a routerLink="viewstudents">View Students</a></button>
+                        <button ngbDropdownItem>View Student</button>
+                        <button ngbDropdownItem>Remove Student</button>
+                    </div>
+                </div>
+                <div class="d-inline-block">
+                    <button class="btn"><a routerLink="concepts">Concepts</a></button>  
+                </div>
+                <div class="d-inline-block">
+                    <button class="btn"><a routerLink="users">View Users</a></button>  
+                </div>
+                <div class="d-inline-block" *ngIf="tokenstatus">
+                    <button class="btn"><a routerLink="login">Signin</a></button>  
+                </div>
+                <div class="d-inline-block" *ngIf="!tokenstatus">
+                    <button class="btn" (click)="logout()">Logout</button>  
+                </div>
+                <div class="d-inline-block">
+                    Welcome Mr. {{username}} 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+<header class="jumbotron">
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-12 col-sm-4">
+                <h1>COMSATS University, Islamabad</h1>
+                <p>Learning Management System</p>
+            </div>
+            <div class="col-12 col-sm align-self-center">
+                <img src="../../assets/img/cu.jpg" class="img-fluid">
+            </div>            </div>
+    </div>
+</header>

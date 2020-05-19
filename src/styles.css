@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.navbar-dark {
+  background-color: rgb(157, 177, 202); }
+.footer {
+  background-color: rgb(65, 173, 192);
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 40px 30px;
+  background: rgb(79, 93, 139);
+  color: floralwhite;
+}
+
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
+}
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.modal-header {
+  background-color: #808080;
+  color: floralwhite;
+}
+.modal-header .close {
+  color: floralwhite;
+}
+
+.modal-body {
+  background-color: #d1c4e9;
+}
