@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
       else if(this.data.success) {
           this.authService.storeUserData(this.data.token, this.data.user);
           console.log(this.data);
-          this.flashMessage.show('You are now logged in as'+this.data.user.role, 
+          this.flashMessage.show('You are now logged in as '+this.data.user.role, 
           {cssClass: 'alert-success', timeout: 3000});
           setTimeout(() => {
           this.router.navigate(['']);

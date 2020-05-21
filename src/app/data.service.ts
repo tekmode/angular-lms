@@ -43,6 +43,7 @@ baseUrl="http://localhost:3000/admin/";
     return this.http.get(url,httpOptions);
   }
    userslist(){
+     console.log(httpOptions);
     let url="http://localhost:3000/users";
     return this.http.get(url,httpOptions);
   }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {trigger,style,transition,animate,keyframes,query,stagger} from '@angular/animations';
 animations:[
-  trigger('employees',[
+  trigger('teachers',[
    transition('* => *',[
      query(':enter',style({opacity:0}),{optional:true}),
      query(':enter',stagger('300ms',[
